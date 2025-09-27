@@ -1,4 +1,4 @@
-package com.persistent.variable;
+package com.persistent.varialbes;
 
 public class Method_ex4 {
 	    
