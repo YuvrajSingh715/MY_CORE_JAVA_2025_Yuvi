@@ -1,0 +1,15 @@
+package com.persistent.flow.control.Iterative.Stat;
+
+public class ForLoopDemo {
+
+	public static void main(String[] args) {
+
+		int i = 1;
+		for (System.out.println("Hellow Guys"); i <= 7; i++) 
+
+	    System.out.println(i);
+//		System.out.println("hiii");   
+	    System.out.println(i);
+		
+	}
+}
