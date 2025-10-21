@@ -8,8 +8,8 @@ public class ForLoopDemo {
 		for (System.out.println("Hellow Guys"); i <= 7; i++) 
 
 	    System.out.println(i);
-//		System.out.println("hiii");   
-	    System.out.println(i);
+//      System.out.println("Hiii");
+		System.out.println(i);
 		
 	}
 }
