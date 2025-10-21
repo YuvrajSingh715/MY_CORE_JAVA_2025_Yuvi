@@ -1,6 +1,6 @@
 package com.persistent.flow.control.Iterative.Stat;
 
-public class DoWhileLoopSumOfNumberDemo {
+public class DoWhileLoopSumOfNaturalNumberDemo {
 
 	public static void main(String[] args) {
 
