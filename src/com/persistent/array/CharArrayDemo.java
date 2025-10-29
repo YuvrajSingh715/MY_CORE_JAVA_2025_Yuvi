@@ -1,6 +1,6 @@
 package com.persistent.array;
 
-public class CharArrayDemo1 {
+public class CharArrayDemo {
 
 	public static void main(String[] args) {
 		
