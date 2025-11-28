@@ -1,4 +1,4 @@
-package com.Google.Mock_interview;
+package com.Google.yuvraj.Mock_interview;
 
 public class Student1 {
 
