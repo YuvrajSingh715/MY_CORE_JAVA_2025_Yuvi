@@ -21,7 +21,7 @@ public class EncapsulationDemo {
 		this.accountHolder = accountHolder;
 	}
 
-	// constructor
+	// Constructor
 	EncapsulationDemo(String accountHolder, double balance ) {
 		this.balance = balance;
 		this.accountHolder = accountHolder;

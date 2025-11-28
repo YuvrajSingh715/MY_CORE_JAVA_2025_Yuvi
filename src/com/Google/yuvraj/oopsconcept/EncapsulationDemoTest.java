@@ -6,11 +6,11 @@ public class EncapsulationDemoTest {
 
 		EncapsulationDemo ed = new EncapsulationDemo("Yuvraj",44829);
 		
-		//Modifie the values
+		//Modifie the values.
 		ed.setAccountHolder("Yuvraj Singh");
 		ed.setBalance(50000);
 		
-		//Print the values
+		//Print the values.
 		System.out.println("Current Balance = " + ed.getBalance());
 		System.out.println("Account Holder = "+ed.getAccountHolder());
 		System.out.println(ed);
