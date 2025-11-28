@@ -22,15 +22,14 @@ public class EncapsulationDemo {
 	}
 
 	// constructor
-	EncapsulationDemo(String accountHolder, double balance ) {
+	EncapsulationDemo(String accountHolder, double balance) {
 		this.balance = balance;
 		this.accountHolder = accountHolder;
 	}
 
-	/*
-	 * @Override public String toString() { return
-	 * "Account Information = [Account Holder = " + accountHolder + ", Balance = " +
-	 * balance + "]"; }
-	 */
+	@Override
+	public String toString() {
+		return "Account Information = [Account Holder = " + accountHolder + ", Balance = " + balance + "]";
+	}
 
 }
