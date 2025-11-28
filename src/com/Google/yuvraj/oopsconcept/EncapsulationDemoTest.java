@@ -9,13 +9,13 @@ public class EncapsulationDemoTest {
 		//Modifie the values
 		ed.setAccountHolder("Yuvraj Singh");
 		ed.setBalance(50000);
-	//Double money= ed.getBalance();
-	//System.out.println(money);
-		//Print the values
-		//System.out.println("Current Balance = " + ed.getBalance());
-		//System.out.println("Account Holder = "+ed.getAccountHolder());
+
+		//print the value
+		System.out.println("Current Balance = " + ed.getBalance());
+		System.out.println("Account Holder = "+ed.getAccountHolder());
+		
 		System.out.println(ed);
-		//System.out.println(ed.toString());
+		System.out.println(ed.toString());
 		
 //		System.out.println(ed);  //without toString method
         // Output:  com.yuvraj.oopsconcept.EncapsulationDemo@24d46ca6
