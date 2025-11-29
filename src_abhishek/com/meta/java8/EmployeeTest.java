@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class EmployeeTest {
@@ -72,7 +74,18 @@ public class EmployeeTest {
 		Optional<Employee> Oldage = employeeList.stream().max(Comparator.comparingInt(Employee::getAge));
 
 		String nameDepartment = Oldage.map(Employee::getDepartment).orElse("No Employee");
-		System.out.println("Employee Name = " +Oldage.get());
+		System.out.println("Employee Name = " + Oldage.get());
+
+		System.out.println(
+				"+++++++++++++++++++++++++++What is the average salary of each department?+++++++++++++++++++++++++++++++++++++++++");
+
+		Map<String, Double> avgSalaryDept = employeeList.stream().collect(
+				Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
+		Set<Entry<String, Double>> entrySet = avgSalaryDept.entrySet();
+		for (Entry<String, Double> entry : entrySet) {
+			System.out.println(entry.getKey() + " " + entry.getValue());
+
+		}
 	}
 
 }
