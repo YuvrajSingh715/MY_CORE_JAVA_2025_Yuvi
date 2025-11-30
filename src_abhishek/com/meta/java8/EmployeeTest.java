@@ -2,6 +2,7 @@ package com.meta.java8;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.DoubleSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -85,6 +86,23 @@ public class EmployeeTest {
 		for (Entry<String, Double> entry : entrySet) {
 			System.out.println(entry.getKey() + " " + entry.getValue());
 
+			System.out.println(
+					"+++++++++++++++++++++++++++ How many male and female employees are there in the sales and marketing team?+++++++++++++++++++++++++++++++++++++++++");
+			Map<String, Long> countMaleFemaleEmployeesInSalesMarketing = employeeList.stream()
+					.filter(s -> s.getDepartment() == "Sales And Marketing")
+					.collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+			System.out.println(countMaleFemaleEmployeesInSalesMarketing);
+			System.out.println(
+					"+++++++++++++++++++++++++++ What is the average salary and total salary of the whole organization?+++++++++++++++++++++++++++++++++++++++++");
+			DoubleSummaryStatistics employeeSalaryStatistics = employeeList.stream().collect(Collectors.summarizingDouble(Employee::getSalary));
+			System.out.println(employeeSalaryStatistics.getAverage());
+			System.out.println(employeeSalaryStatistics.getSum());
+			System.out.println(employeeSalaryStatistics.getMax());
+			System.out.println(employeeSalaryStatistics.getMin());
+			System.out.println(employeeSalaryStatistics.getClass());
+		
+			
+			
 		}
 	}
 
