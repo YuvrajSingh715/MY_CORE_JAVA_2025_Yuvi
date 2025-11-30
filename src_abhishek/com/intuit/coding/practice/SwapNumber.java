@@ -34,15 +34,7 @@ public class SwapNumber {
 		arr[0] = arr[0] ^ arr[1];
 		
 		System.out.println(arr[0] + " " + arr[1]);
-		
-		
-		
 
-		
-		
-		
-		
-		
 	}
 
 }
