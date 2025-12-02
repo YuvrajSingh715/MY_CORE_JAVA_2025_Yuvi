@@ -1,22 +1,22 @@
 package com.Google.yuvraj.modifiers.pack2;
 
-public class OverlodingDemo {
+public class OverloadingDemo1 {
 	
 	public static void main(String[] args) {
 		
-		OverlodingDemo old = new OverlodingDemo();
+		OverloadingDemo1 old = new OverloadingDemo1();
 		
 		old.m1();
 		System.out.println("-------------------------------------------");
 		old.m1("Yvuraj Singh Kushwah");
 		System.out.println("-------------------------------------------");
-		old.m1(18);
-		System.out.println("-------------------------------------------");
 		old.m1(18, 19);
 		System.out.println("-------------------------------------------");
 		old.m1("Yuvraj Singh Kushwah", 18, 'A');
 		System.out.println("-------------------------------------------");
-		old.m1('B');
+		old.m1('c');
+		System.out.println("-------------------------------------------");
+		old.main('s');
 		
 		
 	}
@@ -34,7 +34,7 @@ public class OverlodingDemo {
 	}
 
 	public void m1(int a) {
-		System.out.println("one int type argument method");
+		System.out.println("one int type argument method.");
 		System.out.println(a);
 	}
 
@@ -43,8 +43,8 @@ public class OverlodingDemo {
 		System.out.println(a + " , " + b);
 	}
 	
-	public void m1(String b, int a, char c) {
-		System.out.println("three int and string type argument method");
+	public void m1(String a, int b, char c) {
+		System.out.println("char, int and string type argument method");
 		System.out.println(a + " , " + b + " , " + c);
 	}
 	
