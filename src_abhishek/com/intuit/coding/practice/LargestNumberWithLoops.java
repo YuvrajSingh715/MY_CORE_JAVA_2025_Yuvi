@@ -1,4 +1,4 @@
-package com.meta.java8;
+package com.intuit.coding.practice;
 
 public class LargestNumberWithLoops {
     
