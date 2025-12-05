@@ -1,10 +1,10 @@
-package com.Google.yuvraj.modifiers.pack2;
+package com.Google.yuvraj.oopsconcept.polymorphism;
 
-public class OverloadingDemo1 {
+public class OverLoadingDemo {
 	
 	public static void main(String[] args) {
 		
-		OverloadingDemo1 old = new OverloadingDemo1();
+		OverLoadingDemo old = new OverLoadingDemo();
 		
 		old.m1();
 		System.out.println("-------------------------------------------");
@@ -44,12 +44,12 @@ public class OverloadingDemo1 {
 	}
 	
 	public void m1(String a, int b, char c) {
-		System.out.println("char, int and string type argument method");
+		System.out.println("string, int and char type argument method");
 		System.out.println(a + " , " + b + " , " + c);
 	}
 	
 	public static void main (char s) {
-		System.out.println("this is a string type main method");
+		System.out.println("this is a char type main method");
 		System.out.println(s);
 	} 
 
