@@ -7,11 +7,11 @@ public class ForLoopSumOfDigitDemo {
 		int num = 8743;
 		int total = 0;
 
-		for (int temp = 0; num > 0;System.out.println("Hi Guys")) {
+		for (int temp = 0; num > 0;) {
 			temp = num % 10;
 			total = total + temp;
 			num = num / 10;
-			System.out.println(+total);
+			System.out.println(total);
 		}
 		System.out.println("sum of digit = " + total);
 	}

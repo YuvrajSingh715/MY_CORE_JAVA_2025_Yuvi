@@ -11,7 +11,7 @@ public class ForLoopCountTheNumberOfDigitDemo {
 			i = i/10;
 		
 		
-			System.out.println("The total digit = " +count); // loop will be stoped than print this
+			System.out.println("total digit of number = " +count); // loop will be stoped than print this
 
 	}
 
