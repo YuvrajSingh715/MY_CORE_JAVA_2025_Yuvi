@@ -1,6 +1,8 @@
 # 🚀*This is our java project.*
-<img width="612" height="408" alt="image" src="https://github.com/user-attachments/assets/802604d1-cd3f-481b-b3dc-e37ca0e2fe14" />
 
+<p align="center">
+<img width="612" height="408" alt="image" src="https://github.com/user-attachments/assets/802604d1-cd3f-481b-b3dc-e37ca0e2fe14" />
+</p>
 
 ## 🙏***Special thanks to all contributors.***
 1. Contributions are welcome!  
