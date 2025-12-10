@@ -16,7 +16,7 @@ public class VarargDemo1 {
 	
 	
 	public static void m1(int...x) {
-		System.out.println("var arg method.");
+		System.out.println("this is var arg method.");
 	}
 
 }
