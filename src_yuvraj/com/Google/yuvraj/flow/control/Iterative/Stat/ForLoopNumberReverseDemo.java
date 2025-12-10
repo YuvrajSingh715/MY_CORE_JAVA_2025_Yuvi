@@ -4,7 +4,7 @@ public class ForLoopNumberReverseDemo {
 
 	public static void main(String[] args) {
 
-		int num = 8374;
+		int num = 83545674;
 		int temp = 0;
 		int rev = 0;
 		

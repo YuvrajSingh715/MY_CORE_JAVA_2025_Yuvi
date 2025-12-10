@@ -4,7 +4,7 @@ public class WhileLoopLeftPlusRightDemo {
 
 	public static void main(String[] args) {
 
-		int num = ***REMOVED***67; // Original number
+		int num = 1234567; // Original number
 		int temp = num; // Temporary variable to manipulate
 		int digit = 0; // Total number of digits
 

@@ -11,7 +11,7 @@ import java.util.stream.DoubleStream;
  */
 public class StaticImportBrainstorm {
 
-    private static final Random RNG = new Random(***REMOVED***); // deterministic for reproducible results
+    private static final Random RNG = new Random(12345); // deterministic for reproducible results
 
     public static void main(String[] args) {
         double[] values = generateRandomArray(12, -50.0, 150.0);

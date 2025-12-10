@@ -3,7 +3,7 @@ class SwapFirstLastNumber{
 	
 	public static void main (String[] args){
 
-       int num = ***REMOVED***;
+       int num = 12345;
 
       String str = String.valueOf(num);	
 

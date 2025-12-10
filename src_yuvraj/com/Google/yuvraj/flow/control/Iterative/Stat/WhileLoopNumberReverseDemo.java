@@ -4,7 +4,7 @@ public class WhileLoopNumberReverseDemo {
 	
 	public static void main(String[] args) {
 		
-		int num = ***REMOVED***67;
+		int num = 1234567;
 		int rev = 0;
 		int temp = 1;
 		
