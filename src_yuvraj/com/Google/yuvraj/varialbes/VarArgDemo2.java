@@ -18,7 +18,9 @@ public class VarArgDemo2 {
 		int total=0;
 		
 		for(int y:x) {
-			total = total+y;
+			
+		total = total+y;
+		
 		}
 		
 		System.out.println("The sum : "+total);

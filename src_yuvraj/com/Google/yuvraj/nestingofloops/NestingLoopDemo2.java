@@ -1,6 +1,6 @@
 package com.Google.yuvraj.nestingofloops;
 
-public class NestingLoopDemo {
+public class NestingLoopDemo2 {
 
 	public static void main(String[] args) {
 
