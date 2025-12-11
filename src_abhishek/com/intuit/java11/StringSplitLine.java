@@ -1,8 +1,5 @@
 package com.intuit.java11;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
-
 public class StringSplitLine {
 
 	public static void main(String[] args) {
@@ -17,8 +14,7 @@ public class StringSplitLine {
 		// Files.readString() and Files.writeString()
 
 		// Before Java 11 → reading/writing required multiple lines.
-		
-		
+
 	}
 
 }
