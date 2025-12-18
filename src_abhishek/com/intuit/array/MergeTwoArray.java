@@ -12,18 +12,20 @@ public class MergeTwoArray {
 		int c_length = a_length + b_length;
 
 		System.out.println(c_length);
-		int [] c = new int[c_length];
-		for(int i = 0; i<a_length; i ++) {
-			//System.out.println(a[i]);
-			c[i] =a[i];
+		int[] c = new int[c_length];
+		for (int i = 0; i < a_length; i++) {
+			// System.out.println(a[i]);
+			c[i] = a[i];
 			System.out.println(c[i]);
 		}
-		for(int j = 0; j<b_length; j++) {
+		for (int j = 0; j < b_length; j++) {
 			System.out.println(c[j]);
-			
+			c[a_length + j] = b[j];
 		}
-		
+		for (int value : c) {
+			System.out.print(value + " ");
+
+		}
 
 	}
-
 }
