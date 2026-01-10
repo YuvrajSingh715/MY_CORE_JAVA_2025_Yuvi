@@ -19,9 +19,17 @@ public class SortedArrayDemo {
 				}
 			}
 		}
+		
 		System.out.print("Sorted Array in ascending order = " );
-		for (int i = 0; i < num.length; i++)
+		for (int i = 0; i < num.length; i++) {
 			System.out.print( num[i] + " ");
+		}
+		
+//		System.out.print("Sorted Array in ascending order = " );
+//		for (int a : num) {
+//			System.out.print(a + " ");
+//		}
+		
 	}
 
 }
