@@ -8,7 +8,9 @@ public class DoWhileLoopDemo {
 			System.out.println(i);
 			i++;
 		} while (i <= 10);
-		System.out.println("Now condition is false");
+		{
+			System.out.println("Now condition is false");
+		}
 
 	}
 
