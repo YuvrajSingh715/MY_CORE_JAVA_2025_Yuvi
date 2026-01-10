@@ -17,7 +17,7 @@ public class ABCTest {
 		System.out.println(a.i);
 		System.out.println(a.d);
 		
-		C o = new C();  // calls all class variable throw the one object
+		C o = new C();  // calls all class variable throw the one object creation.
 		System.out.println(((C)o).i);
 		System.out.println(((C)o).d);
 		System.out.println(((B)o).i);
@@ -25,47 +25,39 @@ public class ABCTest {
 		System.out.println(((A)o).i);
 		System.out.println(((A)o).d);
 
-		System.out.println("############################");
+		System.out.println("###################################");
 
 		// Experiment with I-Method.
 		C c1 = new C();
-//		((C)c1).n1();         // Similar to => c1.n1();
 		c1.n1();
-		System.out.println(c1.i);
-		System.out.println(c1.d);
-
+		
 		B b1 = new C();
-//		((B)b1).n1();         // Similar to => b1.n1();
 		b1.n1();	
-		System.out.println(b1.i);
-		System.out.println(b1.d);
 		
 		A a1 = new C();
-//		((A)a1).n1();         // Similar to => a1.n1();
 		a1.n1();	
-		System.out.println(a1.i);
-		System.out.println(a1.d);
+		
+		C i = new C();  // calls all class instance method throw the one object creation.
+		((C)i).n1();
+		((B)i).n1();
+		((A)i).n1();
 
-		System.out.println("############################");
+		System.out.println("###################################");
 
 		// Experiment with S-Method.
 		C c2 = new C();
-//		((C)c2).m1();         // Similar to => c2.m1();
 		c2.m1();
-		System.out.println(c2.i);
-		System.out.println(c2.d);
 		
 		B b2 = new C();
-//		((B)b2).m1();         // Similar to => b2.m1();
 		b2.m1();
-		System.out.println(b2.i);
-		System.out.println(b2.d);
 		
 		A a2 = new C();
-//		((A)a2).m1();         // Similar to => a2.m1();
 		a2.m1();
-		System.out.println(a2.i);
-		System.out.println(a2.d);
+		
+		C s = new C();  // calls all class static method throw the one object creation.
+		((C)i).m1();
+		((B)i).m1();
+		((A)i).m1();
 
 	}
 
