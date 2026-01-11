@@ -1,8 +1,5 @@
 package com.intuit.interview;
 
-import com.Google.yuvraj.oopsconcept.Child;
-import com.Google.yuvraj.oopsconcept.Parent;
-
 public class PCTest {
 
 	public static void main(String[] args) {
@@ -19,7 +16,7 @@ public class PCTest {
 		// case3
 		Parent p2 = new Child();
 //		p2.m1();   //Without overriding, the child class calls the parent class’s m1 method.
-		p2.m1();   //the method is overridden, the output comes from the child class m1 method.
+		p2.m1(); // the method is overridden, the output comes from the child class m1 method.
 
 		// case4
 //		Child c2 = new Parent();   
@@ -28,4 +25,3 @@ public class PCTest {
 	}
 
 }
-
