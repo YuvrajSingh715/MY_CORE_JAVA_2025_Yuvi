@@ -1,8 +1,5 @@
 package com.intuit.interview;
 
-import com.Google.yuvraj.oopsconcept.Child;
-import com.Google.yuvraj.oopsconcept.Parent;
-
 public class PCTest {
 
 	public static void main(String[] args) {
