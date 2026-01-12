@@ -15,18 +15,18 @@ public class LinkedHashSetDemo {
 		
 		linked.add("Yuvraj");
 		linked.add("Abhishek");
-//		linked.add(null);
+		linked.add(null);
 		linked.add("Pooja");
 		linked.add("Bhupesh");
-//		linked.add(null);
+		linked.add(null);
 		linked.add("Abhi");
 		linked.add("Priyanka");
 		linked.add("Yuvi");
 		linked.add("Yuvi");
 		
-		Map<Integer, List<String>> lengthCount = linked.stream()
-				.collect(Collectors.groupingBy(String::length));
-		System.out.println(lengthCount);
+//		Map<Integer, List<String>> lengthCount = linked.stream()
+//				.collect(Collectors.groupingBy(String::length));
+//		System.out.println(lengthCount);
 		
 		System.out.println(linked.add("Bhupesh"));
 		System.out.println(linked.add("Sunny"));
