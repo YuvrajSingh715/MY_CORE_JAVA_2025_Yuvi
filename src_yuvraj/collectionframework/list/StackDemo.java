@@ -54,6 +54,7 @@ public class StackDemo {
 		sd.forEach((s1) -> {
 			System.out.println(s1);
 		});
+		
 	}
 
 }
