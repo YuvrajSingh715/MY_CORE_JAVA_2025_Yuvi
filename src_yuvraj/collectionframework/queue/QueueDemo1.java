@@ -14,6 +14,7 @@ public class QueueDemo1 {
 		queue.add(30);
 
 		// offer() → insert element (returns false if fails)
+
 		queue.offer(10);
 		queue.offer(20);
 		queue.offer(40);
