@@ -1,6 +1,6 @@
 package com.intuit.interview;
 
-public class Calculator {
+public class SumTwoNumber {
 
 	int add(int a, int b) {
 		return a + b;
@@ -12,7 +12,7 @@ public class Calculator {
 	
 	public static void main(String[] args) {
 		
-		Calculator c = new Calculator();
+		SumTwoNumber c = new SumTwoNumber();
 		
 		
 		System.out.println(c.add(4, 6));
