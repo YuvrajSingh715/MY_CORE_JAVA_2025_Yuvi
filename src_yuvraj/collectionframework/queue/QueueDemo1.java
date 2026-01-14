@@ -14,6 +14,8 @@ public class QueueDemo1 {
 		queue.add(30);
 
 		// offer() → insert element (returns false if fails)
+
+		queue.offer(10);
 		queue.offer(20);
 		queue.offer(40);
 
@@ -45,6 +47,7 @@ public class QueueDemo1 {
 
 		System.out.println("3rd time Remove Head using remove(): " + queue.remove());
 		System.out.println("4th time Remove Head using poll(): " + queue.poll());
+		System.out.println("5th time Remove Head using remove(): " + queue.remove());
 		System.out.println(">->>-->>>--->>>><<<<---<<<--<<-<");
 
 		System.out.println("Queue elements: " + queue);
