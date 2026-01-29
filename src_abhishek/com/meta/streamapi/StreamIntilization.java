@@ -1,4 +1,4 @@
-package com.abhi.streamapi;
+package com.meta.streamapi;
 
 import java.util.List;
 import java.util.stream.Collectors;
