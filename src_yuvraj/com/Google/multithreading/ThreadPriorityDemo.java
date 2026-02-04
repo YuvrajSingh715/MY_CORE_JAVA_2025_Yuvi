@@ -15,7 +15,7 @@ public class ThreadPriorityDemo {
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 		System.out.println("2nd Updated Priority: "+Thread.currentThread().getPriority());
 		
-		Thread.currentThread().setPriority(11);     
+		Thread.currentThread().setPriority(11);   //we will get C.E IllegalArgumentException
 		System.out.println("3rd Updated Priority: "+Thread.currentThread().getPriority());
 		
 	}

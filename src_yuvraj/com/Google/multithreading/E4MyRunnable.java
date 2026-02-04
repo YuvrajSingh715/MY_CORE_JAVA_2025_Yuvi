@@ -1,6 +1,7 @@
 package com.Google.multithreading;
 
-public class E4MyRunnable extends Thread implements Runnable {
+public class E4MyRunnable implements Runnable {
+//public class E4MyRunnable extends Thread implements Runnable {          //through this like we can get start() method directly
 
 	@Override
 	public void run() {

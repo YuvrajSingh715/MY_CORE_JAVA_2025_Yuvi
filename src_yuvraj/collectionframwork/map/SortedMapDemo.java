@@ -33,7 +33,7 @@ public class SortedMapDemo {
 		// headMap() --> Returns entries with keys less than 004
 		System.out.println(">->>-->>>--->>>><<<<---<<<--<<-<");
 		System.out.println("headMap(004): "+ sort.headMap(004));
-		System.out.println("headMap(008): " + sort.headMap(007));
+		System.out.println("headMap(007): " + sort.headMap(007));
 		
 		
 		// tailMap() --> Returns entries with keys greater than or equal to 004
@@ -55,7 +55,7 @@ public class SortedMapDemo {
  * Key Notes (Easy to Remember)
  * ----------------------------
  * SortedMap keeps keys in sorted order
- * Sorting is based on natural order (Integer ascending here)
+ * Sorting is based on natural order (Integer ascending order here)
  * TreeMap does not allow null keys
  * Values can be duplicated, keys cannot
  * 
