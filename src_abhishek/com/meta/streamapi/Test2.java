@@ -1,4 +1,4 @@
-package com.abhi.streamapi;
+package com.meta.streamapi;
 
 public class Test2 {
 
