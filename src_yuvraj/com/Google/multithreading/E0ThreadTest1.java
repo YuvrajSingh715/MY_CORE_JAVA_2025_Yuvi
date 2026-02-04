@@ -6,9 +6,9 @@ public class E0ThreadTest1 {
 
 		E0Thread mt = new E0Thread();
 		
-		mt.start();    // strat() internally calls run method.
+		mt.start();    // strat() internally calls run() method.
 		
-		mt.run();      // this is normal calling of run() 
+		mt.run();      // this is normal calling of run(). 
 	
 		System.out.println("This main class thread");
 		

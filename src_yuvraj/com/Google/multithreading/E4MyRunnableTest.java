@@ -8,8 +8,9 @@ public class E4MyRunnableTest {
 		Thread t1 = new Thread(e4);
 		
 		//set the thread name
+		System.out.println("Default name of thread: "+Thread.currentThread().getName());
 		Thread.currentThread().setName("Yuvi's_Thread");
-		System.out.println(Thread.currentThread().getName());
+		System.out.println("updated name of thread: "+Thread.currentThread().getName());
 		
 		
 		t1.start();

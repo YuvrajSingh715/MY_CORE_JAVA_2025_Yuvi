@@ -12,7 +12,7 @@ public class E0ThreadTest {
 		mt.start();  //new Thread will create 
 
 		for (int i = 6; i <= 10; i++) {
-			System.out.println(i + " - This is my thread test1");
+			System.out.println(i + " - This is my main thread");
 
 		}
 

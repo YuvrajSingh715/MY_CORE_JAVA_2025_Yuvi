@@ -15,7 +15,6 @@ public class E6ThreadPriorityTest {
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 		System.out.println("Main Thread Updated Priority: " + Thread.currentThread().getPriority());
 		
-		tp.start();
 		
 		//Updating the Name of Child and Main Thread.
 		System.out.println("Child Thread name: " + tp.getName());
@@ -25,6 +24,8 @@ public class E6ThreadPriorityTest {
 		System.out.println("Main Thread name: "+Thread.currentThread().getName());
 		Thread.currentThread().setName("Main_Thread_002");
 		System.out.println("Updated Main Thread name: "+Thread.currentThread().getName());
+		
+		tp.start();
 		
 		for(int b = 4; b<=6; b++) {
 			System.out.println(b+" - this is main thread");
