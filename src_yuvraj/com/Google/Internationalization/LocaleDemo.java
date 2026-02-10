@@ -27,10 +27,10 @@ public class LocaleDemo {
 //		}
 
 
-		Locale[] s = Locale.getAvailableLocales();
-		for(Locale s1:s) {
-			System.out.println(s1.getDisplayCountry()+ " >---< "+s1.getDisplayLanguage());
-		}
+//		Locale[] s = Locale.getAvailableLocales();
+//		for(Locale s1:s) {
+//			System.out.println(s1.getDisplayCountry()+ " >---< "+s1.getDisplayLanguage());
+//		}
 		
 	}
 	
