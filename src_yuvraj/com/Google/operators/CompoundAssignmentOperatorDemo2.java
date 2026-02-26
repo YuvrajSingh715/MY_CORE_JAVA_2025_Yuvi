@@ -5,7 +5,7 @@ public class CompoundAssignmentOperatorDemo2 {
 	public static void main(String[] args) {
 
 		int a = 25;
-		a += 25; // same as [a = a+25 → 40]
+		a += 25; // same as [a = a+25 → 50]
 		System.out.println("value of a = " + a);
 
 		int b = 15;

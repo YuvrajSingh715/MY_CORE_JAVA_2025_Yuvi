@@ -30,8 +30,6 @@ public class CompoundAssignmentOperatorDemo4 {
 		System.out.println("value of y = " + y); //y = 150
 		System.out.println("value of z = " + z); //z = 50
 		
-		
-		
 	}
 
 }
