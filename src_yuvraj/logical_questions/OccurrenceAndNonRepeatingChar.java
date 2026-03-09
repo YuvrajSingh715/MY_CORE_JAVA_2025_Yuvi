@@ -24,7 +24,7 @@ public class OccurrenceAndNonRepeatingChar {
 		System.out.println("occurrence of all char without spaces: " + charCount1);
 		System.out.println(System.lineSeparator());
 
-		// Find first non-repeating character
+		// Find s non-repeating character
 		Character secondNonRepeatingCharacter = name.chars().mapToObj(x -> (char) x).filter(x -> charCount.get(x) == 1).skip(1)
 				.findFirst().orElse(null);
 

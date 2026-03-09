@@ -11,10 +11,15 @@ public class AnonymousMethod {
 			System.out.println(s);
 		}
 		
+		@Override
+		public int hashCode() {
+			return 76847629;
+		}
+		
 	}; 
 
 	functionalInterface.m1("Yuvraj");
-	
+	System.out.println(functionalInterface.hashCode());
 	}
 	
 }
