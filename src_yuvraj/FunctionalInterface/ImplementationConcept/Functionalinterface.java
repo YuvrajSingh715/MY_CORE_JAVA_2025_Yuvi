@@ -5,7 +5,10 @@ public interface Functionalinterface {
 	
 	public void m1(String s);
 //	public void m2(int i);
-
+	boolean equals(Object obj);   //Object
+	String toString();  //Object
+	int hashCode();     //Object
+	
 }
 
 /*
