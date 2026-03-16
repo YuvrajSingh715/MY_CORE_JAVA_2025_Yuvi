@@ -44,7 +44,7 @@ public class CustomObject {
 		if (obj == null)
 			return false; // null check
 		if (getClass() != obj.getClass())
-			return false;
+			return false;  // casting check
 		CustomObject c = (CustomObject) obj;
 		return this.serialNo == c.serialNo;
 	}

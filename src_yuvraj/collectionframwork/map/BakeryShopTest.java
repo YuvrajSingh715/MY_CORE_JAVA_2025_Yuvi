@@ -33,7 +33,7 @@ public class BakeryShopTest {
 		map.put(bakeryShop2, "Stock Replaced");
 
 		
-		// both are duplicate (key & value)
+		// both are null (key & value)
 		map.put(null, null);
 //		map.put(null, null);
 

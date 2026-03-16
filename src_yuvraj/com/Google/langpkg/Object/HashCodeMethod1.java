@@ -1,4 +1,4 @@
-package com.Google.langpkg;
+package com.Google.langpkg.Object;
 
 public class HashCodeMethod1 {
 
