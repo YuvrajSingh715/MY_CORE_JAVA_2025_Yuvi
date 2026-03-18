@@ -16,6 +16,7 @@ public class Test {
 	   
 	   Stream<Object> str =Arrays.stream(strs).map(String::toUpperCase);
 	   str.sorted().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+	   System.out.println(str.toString());
 
 	   
 			   
