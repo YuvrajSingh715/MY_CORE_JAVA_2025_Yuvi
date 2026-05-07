@@ -21,39 +21,66 @@ public class EmployeeTest {
 				new Employee(16, "Kavya", "Finance", 77000, 29), new Employee(17, "Suresh", "Sales", 55000, 38),
 				new Employee(18, "Meena", "IT", 67000, 27), new Employee(19, "Nitin", "HR", 46000, 34),
 				new Employee(20, "Alok", "Finance", 82000, 40));
-		employees.forEach(System.out::println);
 		// Department-wise Highest Salary (Record ke saath)
-		Map<String, Optional<Employee>> highestSalaryByDept = employees.stream().collect(Collectors
+		Map<String, Optional<Employee>> highestSalarybydept = employees.stream().collect(Collectors
 				.groupingBy(Employee::department, Collectors.maxBy(Comparator.comparingDouble(Employee::salary))));
-		System.out.println(highestSalaryByDept);
+
+		System.out.println(highestSalarybydept);
+
 		// IT Department ka Average Salary
-		double avgItSalary = employees.stream().filter(e -> e.department().equalsIgnoreCase("IT"))
+		double avgITSalary = employees.stream().filter(e -> e.department().equalsIgnoreCase("IT"))
 				.mapToDouble(Employee::salary).average().orElse(0.0);
-		System.out.println(avgItSalary);
+		System.out.println(avgITSalary);
 		// Second Highest Salary (Overall)
-		Employee secondHighest = employees.stream().sorted(Comparator.comparingDouble(Employee::salary).reversed())
-				.skip(1).findFirst().orElse(null);
+		Employee secondHighest = employees.stream().sorted(Comparator.comparingDouble(Employee::salary)).skip(1)
+				.findFirst().orElse(null);
 		System.out.println(secondHighest);
 		// Department-Wise Employee Count
-		Map<String, Long> countByDept = employees.stream()
+		Map<String, Long> countBydept = employees.stream()
 				.collect(Collectors.groupingBy(Employee::department, Collectors.counting()));
-		System.out.println(countByDept);
+		System.out.println(countBydept);
 		// Highest Salary Employee Overall
 		Employee maxSalaryEmp = employees.stream().max(Comparator.comparingDouble(Employee::salary)).orElse(null);
 		System.out.println(maxSalaryEmp);
 		// Department-Wise Total Salary
 		Map<String, Double> totalSalaryByDept = employees.stream()
 				.collect(Collectors.groupingBy(Employee::department, Collectors.summingDouble(Employee::salary)));
+
 		System.out.println(totalSalaryByDept);
 		// Youngest Employee in Each Department
 		Map<String, Optional<Employee>> yougestByDept = employees.stream().collect(
 				Collectors.groupingBy(Employee::department, Collectors.minBy(Comparator.comparingInt(Employee::age))));
 		System.out.println(yougestByDept);
-		//IT Department ka 2nd Highest Salary
-		Employee secondHighestIT =employees.stream().filter(e -> e.department().equalsIgnoreCase("IT")).sorted(Comparator.comparingDouble(Employee::salary).reversed())
-		.skip(1).findFirst().orElse(null);
-		System.out.println(secondHighestIT.name());
+		// IT Department ka 2nd Highest Salary
+		Employee secondHighestIt = employees.stream().filter(e -> e.department().equalsIgnoreCase("IT"))
+				.sorted(Comparator.comparingDouble(Employee::salary).reversed()).skip(1).findFirst().orElse(null);
+		System.out.println(secondHighestIt);
+		System.out.println("// Two-level comparison (Salary DESC → Age ASC)\r\n"
+				+ "		👉 Logic:First: Highest salary If salary same → younger employee first\r\n"
+				+ "");
 		
+		List<Employee> sortedList = employees.stream()
+				.sorted(Comparator.comparingDouble(Employee::salary).reversed().thenComparing(Employee::age)).toList();
+		System.out.println(sortedList);
+		// Three-level comparison (Dept → Salary DESC → Age ASC)
+		System.out.println("// Three-level comparison (Dept → Salary DESC → Age ASC)👉 Logic:\r\n"
+				+ "\r\n"
+				+ "First group by department\r\n"
+				+ "Inside dept → highest salary\r\n"
+				+ "If salary same → younger first");
+		List<Employee> sortedList3 = employees.stream().sorted(Comparator.comparing(Employee::department)
+				.thenComparing(Comparator.comparingDouble(Employee::salary).reversed()).thenComparing(Employee::age))
+				.toList();
+		sortedList3.forEach(System.out::println);
+		System.out.println("Three-level comparison (Dept → Salary DESC → Age ASC)👉 Example:\r\n"
+				+ "Salary DESC\r\n"
+				+ "If salary same → Age DESC\r\n"
+				+ "If age same → Name ASC");
+		Map<String, Employee> secondHighestByDept = employees.stream().collect(Collectors.groupingBy(Employee::department, Collectors.collectingAndThen(Collectors.toList(), list -> list.stream().
+				sorted(Comparator.comparingDouble(Employee::salary).reversed().thenComparing(Employee::age)).skip(1).findFirst().orElse(null))));
+		
+		System.out.println(secondHighestByDept);
+
 	}
 
 }
